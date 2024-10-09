@@ -4,6 +4,7 @@ import { AppService } from './app.service';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { dataSource } from './datasource';
+import { MessagingModule } from './messaging/messaging.module';
 
 @Module({
   imports: [
@@ -11,6 +12,7 @@ import { dataSource } from './datasource';
       isGlobal: true, // Make config available to all modules without importing
     }),
     TypeOrmModule.forRoot(dataSource.options),
+    MessagingModule,
   ],
   controllers: [AppController],
   providers: [AppService],
