@@ -5,7 +5,7 @@ import { CreateMessagingDto } from './dto/create-messaging.dto';
 export class MessagingService {
   // I don't know how to use line lib and don't know where can i get the docs
   /**
-   * 
+   *
    * @param createMessagingDto messages for the user
    * @description I don't know how to use line lib and don't know where can i get the docs
    */
