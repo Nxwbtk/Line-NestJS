@@ -14,7 +14,6 @@ export class MailService {
         pass: process.env.SMTP_PASSWORD,
       },
     });
-    console.log(transporter);
     const info = await transporter.sendMail({
       from: '"KUSRC" <buntakan0703@gmail.com>',
       to: createMailDto.email,
