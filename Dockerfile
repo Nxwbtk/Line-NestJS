@@ -11,5 +11,6 @@ ENV SMTP_PASSWORD=$SMTP_PASSWORD
 ENV FE_URL=$FE_URL
 
 RUN yarn install
+RUN yarn build
 
 CMD ["yarn", "start"]
