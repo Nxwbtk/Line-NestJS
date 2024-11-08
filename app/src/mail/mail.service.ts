@@ -36,8 +36,9 @@ export class MailService {
           <tr>
               <td style="padding: 30px;">
                   <p style="margin-bottom: 20px; font-size: 16px;">เราได้รับคำขอให้รีเซ็ตรหัสผ่านของคุณ หากคุณไม่ได้ทำการร้องขอนี้ คุณสามารถละเว้นอีเมลนี้ได้</p>
-                  <p style="margin-bottom: 30px; font-size: 16px;">เพื่อรีเซ็ตรหัสผ่านของคุณ กรุณาคลิกที่ปุ่มด้านล่าง:</p>
-                  <table role="presentation" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
+<p style="margin-bottom: 30px; font-size: 16px;">เพื่อรีเซ็ตรหัสผ่านของคุณ กรุณาคลิกที่ปุ่มด้านล่าง:</p>
+<p style="margin-bottom: 30px; font-size: 16px; color: #ff5722;">* ลิงก์นี้จะหมดอายุภายใน 3 นาที</p>
+<table role="presentation" cellspacing="0" cellpadding="0" style="margin: 0 auto;">
                       <tr>
                           <td style="border-radius: 4px; background-color: #302782; text-align: center;">
                               <a href="${process.env.FE_URL}/sign-in/reset-password/${createMailDto.otp}" style="background-color: #302782; border: none; color: #ffffff; padding: 12px 24px; text-decoration: none; font-weight: bold; display: inline-block; font-size: 16px; border-radius: 4px;">รีเซ็ตรหัสผ่าน</a>
